@@ -73,7 +73,7 @@ const Header = () => {
             </a>
 
             <a
-              href="https://discord.gg/K2e5ArjfjU"
+              href="https://discord.gg/7d7agTbmKf"
               className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline"
             >
               Discord
