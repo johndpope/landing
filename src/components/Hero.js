@@ -18,7 +18,7 @@ const Hero = () => {
       
       <div className="hidden md:block flex flex-col w-full md:w-3/5 justify-center items-start md:text-left md:px-12 md:pt-40 lg:px-24 lg:pt-72 no-underline">
         <h1 className="font-display md:text-5xl text-orange text-stroke-2">
-          Monetize digital spaces with NFTs
+          Rental markets for digital ad space
         </h1>
         <br/>
         <div className="flex flex-row w-full">
@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       <div className="md:hidden flex flex-col w-full justify-center items-start text-center items-center pt-52 no-underline">
         <h1 className="font-display text-4xl text-orange text-stroke-2">
-          Monetize digital spaces with NFTs
+          Rental markets for digital ad space
         </h1>
         {/* <button class="bg-orange hover:bg-dark-orange hover:shadow-lg shadow-md text-white text-2xl font-semibold mt-7 py-4 px-8 rounded-full">
           Launch App
