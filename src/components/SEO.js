@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import logoSocial from '../images/logo_social.png';
 
 function Seo({
   description, lang, meta, keywords, title, pathname, image
@@ -17,13 +18,6 @@ function Seo({
             siteUrl
           }
         }
-        defaultImage: file(relativePath: { eq: "logo_social.png" }) {
-          childImageSharp {
-            fixed(width: 500) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
       }
     `,
   );
@@ -32,7 +26,7 @@ function Seo({
   const siteUrl = site.siteMetadata.siteUrl;
   let siteImage;
   if (image === undefined || image  === '' || image === null) {
-    siteImage = `${siteUrl}${defaultImage.childImageSharp.fixed.src}`;
+    siteImage = logoSocial;
   } else {
     siteImage = image;
   }

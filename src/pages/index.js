@@ -82,8 +82,8 @@ const IndexPage = () => {
   return (
     <main>
       <Seo 
-        title="Welcome"
-        keywords={['web3', 'advertising', 'marketplace', 'webxr']}
+        title="Welcome to the Zesty Market"
+        keywords={['web3', 'nft', 'advertising', 'marketplace', 'webxr']}
       />
       <Layout>
       
