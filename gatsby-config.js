@@ -6,7 +6,6 @@ module.exports = {
     twitterCreator: "@zestymarket",
   },
   plugins: [
-    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -17,12 +16,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `fredoka one`,
-          `source sans pro\:300,400,400i,600,700` // you can also specify font weights and styles
+          `nunito\:600,700,800`,
+          `lato\:300,400,400i,600,700` // you can also specify font weights and styles
         ],
       }
     },
-    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -31,8 +29,18 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-transformer-remark",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    `custom-mui-theme`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
