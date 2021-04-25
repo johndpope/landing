@@ -7,7 +7,7 @@ import logoSocial from '../images/logo_social.png';
 function Seo({
   description, lang, meta, keywords, title, pathname, image
 }) {
-  const { site, defaultImage } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query SEOQuery {
         site {
