@@ -1,12 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "Zesty Market",
-    description: "web3 market for digital space | future is zesty",
+    description: "Zesty Market is an NFT Rental Markets for Ad Space. Zesty Market helps advertisers engage new audiences and helps creators monetize their content.",
     siteUrl: "https://zesty.market/",
     twitterCreator: "@zestymarket",
   },
   plugins: [
-    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -17,12 +16,11 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `fredoka one`,
-          `source sans pro\:300,400,400i,600,700` // you can also specify font weights and styles
+          `nunito\:600,700,800`,
+          `lato\:300,400,400i,600,700` // you can also specify font weights and styles
         ],
       }
     },
-    "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -31,8 +29,19 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-transformer-remark",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
+    `custom-mui-theme`,
     {
       resolve: "gatsby-source-filesystem",
       options: {

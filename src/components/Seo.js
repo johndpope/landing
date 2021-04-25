@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import logoSocial from '../images/logo_social.png';
 
-function SEO({
+function Seo({
   description, lang, meta, keywords, title, pathname, image
 }) {
-  const { site, defaultImage } = useStaticQuery(
+  const { site } = useStaticQuery(
     graphql`
       query SEOQuery {
         site {
@@ -17,13 +18,6 @@ function SEO({
             siteUrl
           }
         }
-        defaultImage: file(relativePath: { eq: "logo_social.png" }) {
-          childImageSharp {
-            fixed(width: 500) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
       }
     `,
   );
@@ -32,7 +26,7 @@ function SEO({
   const siteUrl = site.siteMetadata.siteUrl;
   let siteImage;
   if (image === undefined || image  === '' || image === null) {
-    siteImage = `${siteUrl}${defaultImage.childImageSharp.fixed.src}`;
+    siteImage = logoSocial;
   } else {
     siteImage = image;
   }
@@ -99,14 +93,14 @@ function SEO({
   );
 }
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   lang: 'en',
   meta: [],
   keywords: [],
   description: '',
 };
 
-SEO.propTypes = {
+Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
@@ -114,4 +108,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-export default SEO;
+export default Seo;
