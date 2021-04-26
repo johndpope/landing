@@ -42,7 +42,7 @@ const useStyles = makeStyles({
     width: "50%",
   },
   overlayContentMobile: {
-    width: "80%",
+    width: "90%",
   },
   heroImg: {
     width: "100%",
@@ -58,6 +58,14 @@ const useStyles = makeStyles({
   subtitle: {
     textAlign: "center", 
     fontSize: "18px",
+  },
+  headerMobile: {
+    textAlign: "center", 
+    fontSize: "28px",
+  },
+  subtitleMobile: {
+    textAlign: "center", 
+    fontSize: "12px",
   },
   heroButton: {
     margin: "1.35rem",
@@ -155,7 +163,7 @@ const IndexPage = () => {
                 <Typography 
                   variant="h1" 
                   color="textPrimary"
-                  className={classes.header}
+                  className={classes.headerMobile}
                   gutterBottom
                 >
                   NFT Rental Markets for Ad Space
@@ -163,7 +171,7 @@ const IndexPage = () => {
                 <Typography 
                   variant="body1" 
                   color="textPrimary"
-                  className={classes.subtitle}
+                  className={classes.subtitleMobile}
                   gutterBottom
                 >
                   As an <strong>advertiser</strong>, reach and engage unique audiences while supporting creators
@@ -171,7 +179,7 @@ const IndexPage = () => {
                 <Typography 
                   variant="body1" 
                   color="textPrimary"
-                  className={classes.subtitle}
+                  className={classes.subtitleMobile}
                   gutterBottom
                 >
                   As a <strong>creator</strong>, find sponsors for your content to move your business forward
