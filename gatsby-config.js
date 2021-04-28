@@ -17,7 +17,7 @@ module.exports = {
       options: {
         fonts: [
           `nunito\:600,700,800`,
-          `lato\:300,400,400i,600,700` // you can also specify font weights and styles
+          `lato\:300,400,400i,500,600,700` // you can also specify font weights and styles
         ],
       }
     },
@@ -33,6 +33,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-transformer-remark",
+    `custom-mui-theme`,
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -41,7 +42,6 @@ module.exports = {
         },
       },
     },
-    `custom-mui-theme`,
     {
       resolve: "gatsby-source-filesystem",
       options: {

@@ -13,7 +13,7 @@ const themeData = {
       default: '#FFF8F2',
     },
     paper: {
-
+      default: '#FFF',
     },
     text: {
       primary: '#9D4800',
