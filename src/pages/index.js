@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   overlay: {
     position: "absolute",
     width: "100%",
-    height: "100%",
+    height: "92vh",
     left: 0,
     top: "-4rem",
     display: "flex",
@@ -98,57 +98,59 @@ const IndexPage = () => {
         {/* Hero section */}
         <section className={classes.section}>
           <Hidden smDown>
-            <img
-              alt=""
-              src={hero}
-              className={classes.heroImg}
-            />
-            <div className={classes.overlay}>
-              <div className={classes.overlayContent}>
-                <Typography 
-                  variant="h1" 
-                  color="textPrimary"
-                  className={classes.header}
-                  gutterBottom
-                >
-                  NFT Rental Markets for Ad Space
-                </Typography>
-                <Typography 
-                  variant="body1" 
-                  color="textPrimary"
-                  className={classes.subtitle}
-                  gutterBottom
-                >
-                  As an <strong>advertiser</strong>, reach and engage unique audiences while supporting creators
-                </Typography>
-                <Typography 
-                  variant="body1" 
-                  color="textPrimary"
-                  className={classes.subtitle}
-                  gutterBottom
-                >
-                  As a <strong>creator</strong>, find sponsors for your content to move your business forward
-                </Typography>
-              </div>
-              <div>
-                <Button 
-                  color="primary" 
-                  className={classes.heroButton}
-                  href="https://app.zesty.market" 
-                  target="_blank" 
-                  rel="noreferrer"
-                >
-                  Launch App
-                </Button>
-                <Button 
-                  color="secondary"
-                  className={classes.heroButton}
-                  href="https://docs.zesty.market" 
-                  target="_blank" 
-                  rel="noreferrer"
-                >
-                  Learn More
-                </Button>
+            <div>
+              <img
+                alt=""
+                src={hero}
+                className={classes.heroImg}
+              />
+              <div className={classes.overlay}>
+                <div className={classes.overlayContent}>
+                  <Typography 
+                    variant="h1" 
+                    color="textPrimary"
+                    className={classes.header}
+                    gutterBottom
+                  >
+                    NFT Rental Markets for Ad Space
+                  </Typography>
+                  <Typography 
+                    variant="body1" 
+                    color="textPrimary"
+                    className={classes.subtitle}
+                    gutterBottom
+                  >
+                    As an <strong>advertiser</strong>, reach and engage unique audiences while supporting creators
+                  </Typography>
+                  <Typography 
+                    variant="body1" 
+                    color="textPrimary"
+                    className={classes.subtitle}
+                    gutterBottom
+                  >
+                    As a <strong>creator</strong>, find sponsors for your content to move your business forward
+                  </Typography>
+                </div>
+                <div>
+                  <Button 
+                    color="primary" 
+                    className={classes.heroButton}
+                    href="https://app.zesty.market" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    Launch App
+                  </Button>
+                  <Button 
+                    color="secondary"
+                    className={classes.heroButton}
+                    href="https://docs.zesty.market" 
+                    target="_blank" 
+                    rel="noreferrer"
+                  >
+                    Learn More
+                  </Button>
+                </div>
               </div>
             </div>
           </Hidden>
