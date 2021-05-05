@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Zesty Market",
-    description: "Zesty Market is an NFT Rental Markets for Ad Space. Zesty Market helps advertisers engage new audiences and helps creators monetize their content.",
+    description: "Zesty Market is an NFT marketplace for creator communities. Zesty Market connects creators and brands through content sponsorships.",
     siteUrl: "https://zesty.market/",
     twitterCreator: "@zestymarket",
   },
