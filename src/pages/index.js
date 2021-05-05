@@ -90,7 +90,7 @@ const IndexPage = () => {
   return (
     <main>
       <Seo 
-        title="Welcome to the Zesty Market"
+        title="Welcome"
         keywords={['web3', 'nft', 'advertising', 'marketplace', 'webxr']}
       />
       <Layout>
@@ -112,7 +112,7 @@ const IndexPage = () => {
                     className={classes.header}
                     gutterBottom
                   >
-                    NFT Rental Markets for Ad Space
+                    NFT Markets for Creator Communities
                   </Typography>
                   <Typography 
                     variant="body1" 
@@ -120,15 +120,15 @@ const IndexPage = () => {
                     className={classes.subtitle}
                     gutterBottom
                   >
-                    As an <strong>advertiser</strong>, reach and engage unique audiences while supporting creators
+                    Zesty connects <strong>creators</strong> with <strong>brands</strong> to drive monetization and engagement.
                   </Typography>
                   <Typography 
                     variant="body1" 
                     color="textPrimary"
-                    className={classes.subtitle}
+                    className={classes.subtitleMobile}
                     gutterBottom
                   >
-                    As a <strong>creator</strong>, find sponsors for your content to move your business forward
+                     ---
                   </Typography>
                 </div>
                 <div>
@@ -168,7 +168,7 @@ const IndexPage = () => {
                   className={classes.headerMobile}
                   gutterBottom
                 >
-                  NFT Rental Markets for Ad Space
+                  NFT Markets for Internet Communities
                 </Typography>
                 <Typography 
                   variant="body1" 
@@ -176,7 +176,7 @@ const IndexPage = () => {
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  As an <strong>advertiser</strong>, reach and engage unique audiences while supporting creators
+                  Zesty connects <strong>creators</strong> with <strong>brands</strong> to drive monetization and engagement.
                 </Typography>
                 <Typography 
                   variant="body1" 
@@ -184,7 +184,7 @@ const IndexPage = () => {
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  As a <strong>creator</strong>, find sponsors for your content to move your business forward
+                  ---
                 </Typography>
               </div>
               <Button 
@@ -244,7 +244,7 @@ const IndexPage = () => {
                       color="textPrimary"
                       gutterBottom
                     >
-                      Advertisers
+                      Brands
                     </Typography>
                     <Typography 
                       variant="body1" 
@@ -275,7 +275,7 @@ const IndexPage = () => {
                   <Grid item xs={12}>
                     <Card className={classes.advertiserCard}>
                       <Typography variant="h4" color="textPrimary" gutterBottom>
-                        Partner with Creators
+                        Foster Partnerships
                       </Typography>
                       <Typography variant="body1" color="textPrimary">
                         Form relationships early on with up-and-coming creators. Build tangible reach beyond just numbers.
@@ -285,10 +285,10 @@ const IndexPage = () => {
                   <Grid item xs={12}>
                     <Card className={classes.advertiserCard}>
                       <Typography variant="h4" color="textPrimary" gutterBottom>
-                        More Transparent Than Big Tech
+                        Transparent
                       </Typography>
                       <Typography variant="body1" color="textPrimary">
-                        Using NFTs and next-generation web3 technology, Zesty Market is an open system that anyone can verify. 
+                        We don't profile or collect targeting data on our audiences. We also don't sell data.
                       </Typography>
                     </Card>
                   </Grid>
@@ -349,7 +349,7 @@ const IndexPage = () => {
                       color="textSecondary"
                       gutterBottom
                     >
-                      Monetize your content without middlemen
+                      Find sponsors and monetize without the middlemen
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
@@ -376,7 +376,7 @@ const IndexPage = () => {
                         Easy Integration
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Whether you’re a WebXR developer or Twitch streamer, we have SDKs to support your content platform.
+                        Whether you’re a WebXR developer or Twitch streamer, we got you.
                       </Typography>
                     </Card>
                   </Grid>
@@ -386,7 +386,7 @@ const IndexPage = () => {
                         True Ownership
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Truly own your content with NFTs. Trust our marketplace to get you the best price for the space.
+                        Truly own your content with NFTs. Use our marketplace to get you the best price for the space.
                       </Typography>
                     </Card>
                   </Grid>
@@ -396,7 +396,7 @@ const IndexPage = () => {
                         Guaranteed Payout
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Using blockchain, we ensure that the funds are available to pay out before renting your digital space.
+                        Using smart contracts, we ensure that the funds are available to pay out before renting your digital space.
                       </Typography>
                     </Card>
                   </Grid>
