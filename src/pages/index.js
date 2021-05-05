@@ -120,7 +120,7 @@ const IndexPage = () => {
                     className={classes.subtitle}
                     gutterBottom
                   >
-                    Zesty connects <strong>creators</strong> with <strong>brands</strong> to drive monetization and engagement.
+                    Zesty Market connects <strong>creators</strong> and <strong>brands</strong> through content sponsorships.
                   </Typography>
                   <Typography 
                     variant="body1" 
@@ -176,7 +176,7 @@ const IndexPage = () => {
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  Zesty connects <strong>creators</strong> with <strong>brands</strong> to drive monetization and engagement.
+                  Zesty Market connects <strong>creators</strong> and <strong>brands</strong> through content sponsorships.
                 </Typography>
                 <Typography 
                   variant="body1" 
