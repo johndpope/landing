@@ -114,7 +114,7 @@ export default function NavBarLinks(props) {
           <Button 
             aria-label="Discord" 
             className={classes.link}
-            href="https://discord.gg/K2e5ArjfjU"
+            href="https://discord.gg/hSXTGvAcSs"
             rel="noreferrer"
             target="_blank"
           >
