@@ -1,14 +1,14 @@
-import * as React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Hidden from '@material-ui/core/Hidden';
-import Card from '@material-ui/core/Card';
-import Grid from '@material-ui/core/Grid';
-import Seo from '../components/Seo';
-import Layout from '../components/Layout';
-import Button from '../components/Button';
-import hero from '../images/hero.svg';
-import heroMobile from '../images/hero_mobile.svg';
+import * as React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import Hidden from "@material-ui/core/Hidden";
+import Card from "@material-ui/core/Card";
+import Grid from "@material-ui/core/Grid";
+import Seo from "../components/Seo";
+import Layout from "../components/Layout";
+import Button from "../components/Button";
+import hero from "../images/hero.svg";
+import heroMobile from "../images/hero_mobile.svg";
 
 const useStyles = makeStyles({
   section: {
@@ -45,25 +45,25 @@ const useStyles = makeStyles({
   },
   heroImg: {
     width: "100%",
-    marginLeft: "-8px"
+    marginLeft: "-8px",
   },
   heroImgMobile: {
     width: "100%",
   },
   header: {
-    textAlign: "center", 
+    textAlign: "center",
     fontSize: "40px",
   },
   subtitle: {
-    textAlign: "center", 
+    textAlign: "center",
     fontSize: "18px",
   },
   headerMobile: {
-    textAlign: "center", 
+    textAlign: "center",
     fontSize: "28px",
   },
   subtitleMobile: {
-    textAlign: "center", 
+    textAlign: "center",
     fontSize: "12px",
   },
   heroButton: {
@@ -80,71 +80,68 @@ const useStyles = makeStyles({
     backgroundColor: "#99E3FF",
     boxShadow: "none",
     borderRadius: "10px",
-  }
-})
+  },
+});
 
 const IndexPage = () => {
   const classes = useStyles();
 
   return (
     <main>
-      <Seo 
+      <Seo
         title="Welcome"
-        keywords={['web3', 'nft', 'advertising', 'marketplace', 'webxr']}
+        keywords={["web3", "nft", "advertising", "marketplace", "webxr"]}
       />
       <Layout>
-      
         {/* Hero section */}
         <section className={classes.section}>
           <Hidden smDown>
             <div>
-              <img
-                alt=""
-                src={hero}
-                className={classes.heroImg}
-              />
+              <img alt="" src={hero} className={classes.heroImg} />
               <div className={classes.overlay}>
                 <div className={classes.overlayContent}>
-                  <Typography 
-                    variant="h1" 
+                  <Typography
+                    variant="h1"
                     color="textPrimary"
                     className={classes.header}
                     gutterBottom
                   >
                     NFT Markets for Creator Communities
                   </Typography>
-                  <Typography 
-                    variant="body1" 
+                  <Typography
+                    variant="body1"
                     color="textPrimary"
                     className={classes.subtitle}
                     gutterBottom
                   >
-                    Zesty Market connects <strong>creators</strong>, <strong>audiences</strong> and <strong>brands</strong> together with web3.
+                    Zesty Market connects <strong>creators</strong>,{" "}
+                    <strong>audiences</strong> and <strong>brands</strong>{" "}
+                    together with web3.
                   </Typography>
-                  <Typography 
-                    variant="body1" 
+                  <Typography
+                    variant="body1"
                     color="textPrimary"
                     className={classes.subtitleMobile}
                     gutterBottom
                   >
-                     ---
+                    ---
                   </Typography>
                 </div>
                 <div>
-                  <Button 
-                    color="primary" 
+                  <Button
+                    color="primary"
                     className={classes.heroButton}
-                    href="https://app.zesty.market" 
-                    target="_blank" 
+                    href="https://app.zesty.market"
+                    target="_blank"
                     rel="noreferrer"
                   >
                     Launch App
                   </Button>
-                  <Button 
+                  <Button
                     color="secondary"
                     className={classes.heroButton}
-                    href="https://docs.zesty.market" 
-                    target="_blank" 
+                    href="https://docs.zesty.market"
+                    target="_blank"
                     rel="noreferrer"
                   >
                     Learn More
@@ -154,31 +151,29 @@ const IndexPage = () => {
             </div>
           </Hidden>
           <Hidden mdUp>
-            <img
-              alt=""
-              src={heroMobile}
-              className={classes.heroImgMobile}
-            />
+            <img alt="" src={heroMobile} className={classes.heroImgMobile} />
             <div className={classes.overlayMobile}>
               <div className={classes.overlayContentMobile}>
-                <Typography 
-                  variant="h1" 
+                <Typography
+                  variant="h1"
                   color="textPrimary"
                   className={classes.headerMobile}
                   gutterBottom
                 >
                   NFT Markets for Internet Communities
                 </Typography>
-                <Typography 
-                  variant="body1" 
+                <Typography
+                  variant="body1"
                   color="textPrimary"
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  Zesty Market connects <strong>creators</strong>, <strong>audiences</strong> and <strong>brands</strong> together with web3.
+                  Zesty Market connects <strong>creators</strong>,{" "}
+                  <strong>audiences</strong> and <strong>brands</strong>{" "}
+                  together with web3.
                 </Typography>
-                <Typography 
-                  variant="body1" 
+                <Typography
+                  variant="body1"
                   color="textPrimary"
                   className={classes.subtitleMobile}
                   gutterBottom
@@ -186,20 +181,20 @@ const IndexPage = () => {
                   ---
                 </Typography>
               </div>
-              <Button 
-                color="primary" 
+              <Button
+                color="primary"
                 className={classes.heroButton}
-                href="https://app.zesty.market" 
-                target="_blank" 
+                href="https://app.zesty.market"
+                target="_blank"
                 rel="noreferrer"
               >
                 Launch App
               </Button>
-              <Button 
+              <Button
                 color="secondary"
                 className={classes.heroButton}
-                href="https://docs.zesty.market" 
-                target="_blank" 
+                href="https://docs.zesty.market"
+                target="_blank"
                 rel="noreferrer"
               >
                 Learn More
@@ -210,8 +205,8 @@ const IndexPage = () => {
 
         {/* Advertiser section */}
         <section className={classes.section}>
-          <Card 
-            style={{ 
+          <Card
+            style={{
               backgroundColor: "#FFF1E5",
               boxShadow: "none",
               margin: 0,
@@ -219,11 +214,7 @@ const IndexPage = () => {
               borderRadius: "10px",
             }}
           >
-            <Grid
-              container
-              direction="row"
-              spacing={6}
-            >
+            <Grid container direction="row" spacing={6}>
               <Grid item xs={12} md={6}>
                 <Grid
                   container
@@ -238,15 +229,11 @@ const IndexPage = () => {
                   }}
                 >
                   <Grid item xs={12}>
-                    <Typography 
-                      variant="h1" 
-                      color="textPrimary"
-                      gutterBottom
-                    >
+                    <Typography variant="h1" color="textPrimary" gutterBottom>
                       Brands
                     </Typography>
-                    <Typography 
-                      variant="body1" 
+                    <Typography
+                      variant="body1"
                       color="textPrimary"
                       gutterBottom
                     >
@@ -254,10 +241,10 @@ const IndexPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Button 
+                    <Button
                       color="primary"
                       href="https://docs.zesty.market/guides/advertisers"
-                      target="_blank" 
+                      target="_blank"
                       rel="noreferrer"
                     >
                       Learn More
@@ -266,18 +253,15 @@ const IndexPage = () => {
                 </Grid>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Grid 
-                  container
-                  direction="column"
-                  spacing={6}
-                >
+                <Grid container direction="column" spacing={6}>
                   <Grid item xs={12}>
                     <Card className={classes.advertiserCard}>
                       <Typography variant="h4" color="textPrimary" gutterBottom>
                         Foster Partnerships
                       </Typography>
                       <Typography variant="body1" color="textPrimary">
-                        Form relationships early on with up-and-coming creators. Build tangible reach beyond just numbers.
+                        Form relationships early on with up-and-coming creators.
+                        Build tangible reach beyond just numbers.
                       </Typography>
                     </Card>
                   </Grid>
@@ -287,7 +271,8 @@ const IndexPage = () => {
                         Transparent
                       </Typography>
                       <Typography variant="body1" color="textPrimary">
-                        We don't profile or collect targeting data on our audiences. We also don't sell data.
+                        We don't profile or collect targeting data on our
+                        audiences. We also don't sell data.
                       </Typography>
                     </Card>
                   </Grid>
@@ -297,7 +282,8 @@ const IndexPage = () => {
                         Get Rewarded
                       </Typography>
                       <Typography variant="body1" color="textPrimary">
-                        Zesty Market rewards advertisers for advertising. Earn a stake in the network through participation.
+                        Zesty Market rewards advertisers for advertising. Earn a
+                        stake in the network through participation.
                       </Typography>
                     </Card>
                   </Grid>
@@ -309,8 +295,8 @@ const IndexPage = () => {
 
         {/* Creator section */}
         <section className={classes.section}>
-          <Card 
-            style={{ 
+          <Card
+            style={{
               backgroundColor: "#C8F0FF",
               boxShadow: "none",
               margin: 0,
@@ -318,11 +304,7 @@ const IndexPage = () => {
               borderRadius: "10px",
             }}
           >
-            <Grid
-              container
-              direction="row-reverse"
-              spacing={6}
-            >
+            <Grid container direction="row-reverse" spacing={6}>
               <Grid item xs={12} md={6}>
                 <Grid
                   container
@@ -332,19 +314,15 @@ const IndexPage = () => {
                   spacing={4}
                   style={{
                     textAlign: "right",
-                    padding: "2rem"
+                    padding: "2rem",
                   }}
                 >
                   <Grid item xs={12}>
-                    <Typography 
-                      variant="h1" 
-                      color="textSecondary"
-                      gutterBottom
-                    >
+                    <Typography variant="h1" color="textSecondary" gutterBottom>
                       Creators
                     </Typography>
-                    <Typography 
-                      variant="body1" 
+                    <Typography
+                      variant="body1"
                       color="textSecondary"
                       gutterBottom
                     >
@@ -352,10 +330,10 @@ const IndexPage = () => {
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Button 
+                    <Button
                       color="secondary"
                       href="https://docs.zesty.market/guides/creators"
-                      target="_blank" 
+                      target="_blank"
                       rel="noreferrer"
                     >
                       Learn More
@@ -364,38 +342,49 @@ const IndexPage = () => {
                 </Grid>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Grid 
-                  container
-                  direction="column"
-                  spacing={6}
-                >
+                <Grid container direction="column" spacing={6}>
                   <Grid item xs={12}>
                     <Card className={classes.publisherCard}>
-                      <Typography variant="h4" color="textSecondary" gutterBottom>
+                      <Typography
+                        variant="h4"
+                        color="textSecondary"
+                        gutterBottom
+                      >
                         Easy Integration
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Whether you’re a WebXR developer or Twitch streamer, we got you.
+                        Whether you’re a WebXR developer or Twitch streamer, we
+                        got you.
                       </Typography>
                     </Card>
                   </Grid>
                   <Grid item xs={12}>
                     <Card className={classes.publisherCard}>
-                      <Typography variant="h4" color="textSecondary" gutterBottom>
+                      <Typography
+                        variant="h4"
+                        color="textSecondary"
+                        gutterBottom
+                      >
                         True Ownership
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Truly own your content with NFTs. Use our marketplace to get you the best price for the space.
+                        Truly own your content with NFTs. Use our marketplace to
+                        get you the best price for the space.
                       </Typography>
                     </Card>
                   </Grid>
                   <Grid item xs={12}>
                     <Card className={classes.publisherCard}>
-                      <Typography variant="h4" color="textSecondary" gutterBottom>
+                      <Typography
+                        variant="h4"
+                        color="textSecondary"
+                        gutterBottom
+                      >
                         Guaranteed Payout
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Using smart contracts, we ensure that the funds are available to pay out before renting your digital space.
+                        Using smart contracts, we ensure that the funds are
+                        available to pay out before renting your digital space.
                       </Typography>
                     </Card>
                   </Grid>
@@ -407,6 +396,6 @@ const IndexPage = () => {
       </Layout>
     </main>
   );
-}
+};
 
 export default IndexPage;

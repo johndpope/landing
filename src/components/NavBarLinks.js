@@ -10,9 +10,8 @@ import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ChevronRight from "@material-ui/icons/ChevronRight";
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
+import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 import CustomButton from "./Button";
-
 
 const useStyles = makeStyles((theme) => ({
   list: {
@@ -41,9 +40,9 @@ const useStyles = makeStyles((theme) => ({
         display: "block !important",
         height: "1px !important",
         marginLeft: "15px !important",
-        backgroundColor: "#e5e5e5 !important"
-      }
-    }
+        backgroundColor: "#e5e5e5 !important",
+      },
+    },
   },
   link: {
     position: "relative !important",
@@ -61,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "8px !important",
       textAlign: "left !important",
       "& > span:first-chil !importantd": {
-        justifyContent: "flex-start !important"
+        justifyContent: "flex-start !important",
       },
     },
   },
@@ -69,38 +68,38 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavBarLinks(props) {
   const classes = useStyles();
-  const {
-    handleDrawerToggle,
-  } = props;
+  const { handleDrawerToggle } = props;
 
   return (
     <>
       <CssBaseline />
       <List className={classes.list}>
         <Hidden mdUp>
-          <ListItem 
+          <ListItem
             className={classes.listItem}
             onClick={() => {
-              handleDrawerToggle()
+              handleDrawerToggle();
             }}
           >
-            <IconButton 
+            <IconButton
               onClick={() => {
-                handleDrawerToggle()
+                handleDrawerToggle();
               }}
               style={{
                 height: "3rem",
               }}
             >
-              <ChevronRight style={{ 
-                fill: "#9D4800",
-                lineHeight: "20px"
-              }} />
+              <ChevronRight
+                style={{
+                  fill: "#9D4800",
+                  lineHeight: "20px",
+                }}
+              />
             </IconButton>
           </ListItem>
         </Hidden>
         <ListItem className={classes.listItem}>
-          <Button 
+          <Button
             aria-label="Litepaper"
             className={classes.link}
             href="https://docs.zesty.market/"
@@ -111,8 +110,8 @@ export default function NavBarLinks(props) {
           </Button>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Button 
-            aria-label="Discord" 
+          <Button
+            aria-label="Discord"
             className={classes.link}
             href="https://discord.gg/hSXTGvAcSs"
             rel="noreferrer"
@@ -122,8 +121,8 @@ export default function NavBarLinks(props) {
           </Button>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Button 
-            aria-label="Twitter" 
+          <Button
+            aria-label="Twitter"
             className={classes.link}
             href="https://twitter.com/zestymarket"
             target="_blank"
@@ -133,8 +132,8 @@ export default function NavBarLinks(props) {
           </Button>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <Button 
-            aria-label="Github" 
+          <Button
+            aria-label="Github"
             className={classes.link}
             href="https://github.com/zestymarket"
             rel="noreferrer"
@@ -144,10 +143,10 @@ export default function NavBarLinks(props) {
           </Button>
         </ListItem>
         <ListItem className={classes.listItem}>
-          <CustomButton 
+          <CustomButton
             className={classes.link}
-            size="small" 
-            color="primary" 
+            size="small"
+            color="primary"
             href="https://app.zesty.market"
             rel="noreferrer"
             target="_blank"

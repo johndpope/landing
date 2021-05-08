@@ -1,12 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
-import logoSocial from '../images/logo_social.png';
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
+import logoSocial from "../images/logo_social.png";
 
-function Seo({
-  description, lang, meta, keywords, title, pathname, image
-}) {
+function Seo({ description, lang, meta, keywords, title, pathname, image }) {
   const { site } = useStaticQuery(
     graphql`
       query SEOQuery {
@@ -19,13 +17,13 @@ function Seo({
           }
         }
       }
-    `,
+    `
   );
 
   const metaDescription = description || site.siteMetadata.description;
   const siteUrl = site.siteMetadata.siteUrl;
   let siteImage;
-  if (image === undefined || image  === '' || image === null) {
+  if (image === undefined || image === "" || image === null) {
     siteImage = logoSocial;
   } else {
     siteImage = image;
@@ -40,53 +38,53 @@ function Seo({
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: 'description',
+          name: "description",
           content: metaDescription,
         },
         {
-          property: 'og:title',
+          property: "og:title",
           content: title,
         },
         {
-          property: 'og:description',
+          property: "og:description",
           content: metaDescription,
         },
         {
-          property: 'og:type',
-          content: 'website',
+          property: "og:type",
+          content: "website",
         },
         {
-          property: 'og:image',
+          property: "og:image",
           content: siteImage,
         },
         {
-          property: 'og:url',
+          property: "og:url",
           content: `${siteUrl}${pathname || "/"}`,
         },
         {
-          name: 'twitter:card',
-          content: 'summary',
+          name: "twitter:card",
+          content: "summary",
         },
         {
-          name: 'twitter:creator',
+          name: "twitter:creator",
           content: site.siteMetadata.author,
         },
         {
-          name: 'twitter:title',
+          name: "twitter:title",
           content: title,
         },
         {
-          name: 'twitter:description',
+          name: "twitter:description",
           content: metaDescription,
         },
       ]
         .concat(
           keywords.length > 0
             ? {
-              name: 'keywords',
-              content: keywords.join(', '),
-            }
-            : [],
+                name: "keywords",
+                content: keywords.join(", "),
+              }
+            : []
         )
         .concat(meta)}
     />
@@ -94,10 +92,10 @@ function Seo({
 }
 
 Seo.defaultProps = {
-  lang: 'en',
+  lang: "en",
   meta: [],
   keywords: [],
-  description: '',
+  description: "",
 };
 
 Seo.propTypes = {

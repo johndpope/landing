@@ -1,35 +1,35 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme } from "@material-ui/core/styles";
 
 const themeData = {
   palette: {
-    type: 'light',
+    type: "light",
     primary: {
-      main: '#ff7500',
+      main: "#ff7500",
     },
     secondary: {
-      main: '#00BAFF',
+      main: "#00BAFF",
     },
     background: {
-      default: '#FFF8F2',
+      default: "#FFF8F2",
     },
     paper: {
-      default: '#FFF',
+      default: "#FFF",
     },
     text: {
-      primary: '#9D4800',
-      secondary: '#007099',
+      primary: "#9D4800",
+      secondary: "#007099",
     },
     error: {
-      main: '#E40173',
+      main: "#E40173",
     },
     warning: {
-      main: '#EEEE2C',
+      main: "#EEEE2C",
     },
     success: {
-      main: '#00CC67',
+      main: "#00CC67",
     },
     info: {
-      main: '#9D04E1',
+      main: "#9D04E1",
     },
   },
   typography: {

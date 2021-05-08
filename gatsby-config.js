@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Zesty Market",
-    description: "Zesty Market is an NFT marketplace for creator communities. Zesty Market connects creators, audiences and brands together with web3.",
+    description:
+      "Zesty Market is an NFT marketplace for creator communities. Zesty Market connects creators, audiences and brands together with web3.",
     siteUrl: "https://zesty.market/",
     twitterCreator: "@zestymarket",
   },
@@ -17,9 +18,9 @@ module.exports = {
       options: {
         fonts: [
           `nunito\:600,700,800`,
-          `lato\:300,400,400i,500,600,700` // you can also specify font weights and styles
+          `lato\:300,400,400i,500,600,700`, // you can also specify font weights and styles
         ],
-      }
+      },
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

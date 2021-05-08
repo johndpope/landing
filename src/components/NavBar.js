@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import {
-  Link
-} from 'gatsby';
+import React, { useState } from "react";
+import { Link } from "gatsby";
 import {
   AppBar,
   Button,
@@ -10,21 +8,19 @@ import {
   IconButton,
   Toolbar,
   Typography,
-} from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
-import {
-  Menu
-} from '@material-ui/icons';
+} from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+import { Menu } from "@material-ui/icons";
 import clsx from "clsx";
-import NavBarLinks from './NavBarLinks';
-import logo from '../images/logo.svg';
+import NavBarLinks from "./NavBarLinks";
+import logo from "../images/logo.svg";
 
 const useStyles = makeStyles({
   flex: {
     flex: 1,
   },
   logo: {
-    marginRight: '1em',
+    marginRight: "1em",
     width: "1.785rem",
     height: "auto",
   },
@@ -61,11 +57,11 @@ const useStyles = makeStyles({
     boxShadow: "0px 12px 36px rgba(0, 0, 0, 0.04)",
   },
   appResponsive: {
-    margin: "20px 10px"
+    margin: "20px 10px",
   },
   drawerPaper: {
     width: "16rem",
-  }
+  },
 });
 
 export default function NavBar(props) {
@@ -96,24 +92,18 @@ export default function NavBar(props) {
   };
 
   const BrandComponent = (
-    <Link to="/" style={{ textDecoration: "none"}}>
+    <Link to="/" style={{ textDecoration: "none" }}>
       <div>
         <Button className={classes.title}>
-          <img
-            className={classes.logo}
-            alt="Logo"
-            src={logo}
-          />
-          <Typography variant="h4">
-            Zesty Market
-          </Typography>
+          <img className={classes.logo} alt="Logo" src={logo} />
+          <Typography variant="h4">Zesty Market</Typography>
         </Button>
       </div>
     </Link>
   );
 
   return (
-    <AppBar 
+    <AppBar
       className={clsx({
         [classes.appBar]: true,
         [classes.transparent]: !scrolled,
@@ -122,18 +112,13 @@ export default function NavBar(props) {
       position="fixed"
     >
       <Toolbar className={classes.toolBar}>
-        <div className={classes.flex}>
-          {BrandComponent}
-        </div>
+        <div className={classes.flex}>{BrandComponent}</div>
         <Hidden smDown>
           <NavBarLinks />
         </Hidden>
         <Hidden mdUp>
-          <IconButton
-            aria-label="open drawer"
-            onClick={handleDrawerToggle}
-          >
-            <Menu style={{fill: "#9D4800"}}/>
+          <IconButton aria-label="open drawer" onClick={handleDrawerToggle}>
+            <Menu style={{ fill: "#9D4800" }} />
           </IconButton>
         </Hidden>
       </Toolbar>
@@ -148,10 +133,10 @@ export default function NavBar(props) {
           }}
         >
           <div className={classes.appResponsive}>
-            <NavBarLinks handleDrawerToggle={handleDrawerToggle}/>
+            <NavBarLinks handleDrawerToggle={handleDrawerToggle} />
           </div>
         </Drawer>
       </Hidden>
     </AppBar>
-  )
+  );
 }

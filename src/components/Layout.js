@@ -21,9 +21,7 @@ export default function Layout(props) {
   return (
     <div>
       <NavBar />
-      <main className={clsx(classes.content)}>
-        {props.children}
-      </main>
+      <main className={clsx(classes.content)}>{props.children}</main>
     </div>
   );
 }
