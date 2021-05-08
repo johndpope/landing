@@ -17,9 +17,8 @@ const useStyles = makeStyles({
   overlay: {
     position: "absolute",
     width: "100%",
-    height: "92vh",
     left: 0,
-    top: "-4rem",
+    top: "25rem",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
