@@ -268,22 +268,22 @@ const IndexPage = () => {
                   <Grid item xs={12}>
                     <Card className={classes.advertiserCard}>
                       <Typography variant="h4" color="textPrimary" gutterBottom>
-                        Transparent
+                        Reward Fans
                       </Typography>
                       <Typography variant="body1" color="textPrimary">
-                        We don't profile or collect targeting data on our
-                        audiences. We also don't sell data.
+                        NFTs provide brands with rich engagement data 
+                        and opportunities to reward the most loyal.
                       </Typography>
                     </Card>
                   </Grid>
                   <Grid item xs={12}>
                     <Card className={classes.advertiserCard}>
                       <Typography variant="h4" color="textPrimary" gutterBottom>
-                        Get Rewarded
+                        Community Targeting
                       </Typography>
                       <Typography variant="body1" color="textPrimary">
-                        Zesty Market rewards advertisers for advertising. Earn a
-                        stake in the network through participation.
+                        We don't need to collect intrusive data as we help brands
+                        target communities directly.
                       </Typography>
                     </Card>
                   </Grid>
@@ -353,8 +353,8 @@ const IndexPage = () => {
                         Easy Integration
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Whether you’re a WebXR developer or Twitch streamer, we
-                        got you.
+                        Add our plugins into your content seamlessly to monetize,
+                        we're consistently building new software.
                       </Typography>
                     </Card>
                   </Grid>
@@ -368,8 +368,8 @@ const IndexPage = () => {
                         True Ownership
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
-                        Truly own your content with NFTs. Use our marketplace to
-                        get you the best price for the space.
+                        NFTs allow you to truly own your content + find the 
+                        best opportunities that maximize revenue and engagement.
                       </Typography>
                     </Card>
                   </Grid>
@@ -384,7 +384,7 @@ const IndexPage = () => {
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
                         Using smart contracts, we ensure that the funds are
-                        available to pay out before renting your digital space.
+                        available to pay out before the deal happens.
                       </Typography>
                     </Card>
                   </Grid>
