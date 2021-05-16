@@ -106,7 +106,8 @@ const IndexPage = () => {
                     className={classes.header}
                     gutterBottom
                   >
-                    NFT Markets for Creator Communities
+                    Web3 Monetization <br />
+                    For Internet Communities
                   </Typography>
                   <Typography
                     variant="body1"
@@ -114,9 +115,7 @@ const IndexPage = () => {
                     className={classes.subtitle}
                     gutterBottom
                   >
-                    Zesty Market connects <strong>creators</strong>,{" "}
-                    <strong>audiences</strong> and <strong>brands</strong>{" "}
-                    together with web3.
+                    Say hello to a new way for creators to break free.
                   </Typography>
                   <Typography
                     variant="body1"
@@ -160,7 +159,8 @@ const IndexPage = () => {
                   className={classes.headerMobile}
                   gutterBottom
                 >
-                  NFT Markets for Internet Communities
+                  Web3 Monetization <br />
+                  For Internet Communities
                 </Typography>
                 <Typography
                   variant="body1"
@@ -168,9 +168,7 @@ const IndexPage = () => {
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  Zesty Market connects <strong>creators</strong>,{" "}
-                  <strong>audiences</strong> and <strong>brands</strong>{" "}
-                  together with web3.
+                  Say hello to a new way for creators to break free.
                 </Typography>
                 <Typography
                   variant="body1"
