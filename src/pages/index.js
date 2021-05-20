@@ -201,6 +201,107 @@ const IndexPage = () => {
           </Hidden>
         </section>
 
+        {/* Creator section */}
+        <section className={classes.section}>
+          <Card
+            style={{
+              backgroundColor: "#C8F0FF",
+              boxShadow: "none",
+              margin: 0,
+              padding: "2rem",
+              borderRadius: "10px",
+            }}
+          >
+            <Grid container direction="row-reverse" spacing={6}>
+              <Grid item xs={12} md={6}>
+                <Grid
+                  container
+                  direction="column"
+                  alignItems="flex-end"
+                  justify="center"
+                  spacing={4}
+                  style={{
+                    textAlign: "right",
+                    padding: "2rem",
+                  }}
+                >
+                  <Grid item xs={12}>
+                    <Typography variant="h1" color="textSecondary" gutterBottom>
+                      Creators
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color="textSecondary"
+                      gutterBottom
+                    >
+                      Engage your audience and monetize without the middlemen
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Button
+                      color="secondary"
+                      href="https://docs.zesty.market/guides/creators"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Learn More
+                    </Button>
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Grid container direction="column" spacing={6}>
+                  <Grid item xs={12}>
+                    <Card className={classes.publisherCard}>
+                      <Typography
+                        variant="h4"
+                        color="textSecondary"
+                        gutterBottom
+                      >
+                        Easy Integration
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary">
+                        Add our plugins into your content seamlessly to monetize,
+                        we're consistently building new software.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Card className={classes.publisherCard}>
+                      <Typography
+                        variant="h4"
+                        color="textSecondary"
+                        gutterBottom
+                      >
+                        True Ownership
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary">
+                        NFTs allow you to truly own your content + find the 
+                        best opportunities that maximize revenue and engagement.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Card className={classes.publisherCard}>
+                      <Typography
+                        variant="h4"
+                        color="textSecondary"
+                        gutterBottom
+                      >
+                        Guaranteed Payout
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary">
+                        Using smart contracts, we ensure that the funds are
+                        available to pay out before the deal happens.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Card>
+        </section>
+
         {/* Advertiser section */}
         <section className={classes.section}>
           <Card
@@ -282,107 +383,6 @@ const IndexPage = () => {
                       <Typography variant="body1" color="textPrimary">
                         We don't need to collect intrusive data as we help brands
                         target communities directly.
-                      </Typography>
-                    </Card>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Card>
-        </section>
-
-        {/* Creator section */}
-        <section className={classes.section}>
-          <Card
-            style={{
-              backgroundColor: "#C8F0FF",
-              boxShadow: "none",
-              margin: 0,
-              padding: "2rem",
-              borderRadius: "10px",
-            }}
-          >
-            <Grid container direction="row-reverse" spacing={6}>
-              <Grid item xs={12} md={6}>
-                <Grid
-                  container
-                  direction="column"
-                  alignItems="flex-end"
-                  justify="center"
-                  spacing={4}
-                  style={{
-                    textAlign: "right",
-                    padding: "2rem",
-                  }}
-                >
-                  <Grid item xs={12}>
-                    <Typography variant="h1" color="textSecondary" gutterBottom>
-                      Creators
-                    </Typography>
-                    <Typography
-                      variant="body1"
-                      color="textSecondary"
-                      gutterBottom
-                    >
-                      Find sponsors and monetize without the middlemen
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Button
-                      color="secondary"
-                      href="https://docs.zesty.market/guides/creators"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Learn More
-                    </Button>
-                  </Grid>
-                </Grid>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Grid container direction="column" spacing={6}>
-                  <Grid item xs={12}>
-                    <Card className={classes.publisherCard}>
-                      <Typography
-                        variant="h4"
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        Easy Integration
-                      </Typography>
-                      <Typography variant="body1" color="textSecondary">
-                        Add our plugins into your content seamlessly to monetize,
-                        we're consistently building new software.
-                      </Typography>
-                    </Card>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Card className={classes.publisherCard}>
-                      <Typography
-                        variant="h4"
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        True Ownership
-                      </Typography>
-                      <Typography variant="body1" color="textSecondary">
-                        NFTs allow you to truly own your content + find the 
-                        best opportunities that maximize revenue and engagement.
-                      </Typography>
-                    </Card>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Card className={classes.publisherCard}>
-                      <Typography
-                        variant="h4"
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        Guaranteed Payout
-                      </Typography>
-                      <Typography variant="body1" color="textSecondary">
-                        Using smart contracts, we ensure that the funds are
-                        available to pay out before the deal happens.
                       </Typography>
                     </Card>
                   </Grid>
