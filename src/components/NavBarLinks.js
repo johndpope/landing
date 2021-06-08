@@ -102,7 +102,7 @@ export default function NavBarLinks(props) {
           <Button
             aria-label="Litepaper"
             className={classes.link}
-            href="https://docs.zesty.market/"
+            href="https://docs.zesty.market/litepaper"
             rel="noreferrer"
             target="_blank"
           >
