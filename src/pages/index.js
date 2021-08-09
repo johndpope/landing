@@ -106,8 +106,8 @@ const IndexPage = () => {
                     className={classes.header}
                     gutterBottom
                   >
-                    Web3 Monetization <br />
-                    For Internet Communities
+                    Rental Markets<br />
+                    For Digital Spaces
                   </Typography>
                   <Typography
                     variant="body1"
@@ -159,8 +159,8 @@ const IndexPage = () => {
                   className={classes.headerMobile}
                   gutterBottom
                 >
-                  Web3 Monetization <br />
-                  For Internet Communities
+                  Rental Markets<br />
+                  For Digital Spaces
                 </Typography>
                 <Typography
                   variant="body1"
