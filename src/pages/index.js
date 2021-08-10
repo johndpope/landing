@@ -115,7 +115,7 @@ const IndexPage = () => {
                     className={classes.subtitle}
                     gutterBottom
                   >
-                    Say hello to a new way for creators to break free.
+                    Turn your Twitch banner/webspace into an NFT and rent it out on the Web.
                   </Typography>
                   <Typography
                     variant="body1"
@@ -168,7 +168,7 @@ const IndexPage = () => {
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  Say hello to a new way for creators to break free.
+                  Turn your Twitch banner/webspace into an NFT and rent it out on the Web.
                 </Typography>
                 <Typography
                   variant="body1"
