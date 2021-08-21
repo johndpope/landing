@@ -10,14 +10,14 @@ const themeData = {
       main: "#00BAFF",
     },
     background: {
-      default: "#FFF8F2",
+      default: "#F4EBE2",
     },
     paper: {
       default: "#FFF",
     },
     text: {
-      primary: "#9D4800",
-      secondary: "#007099",
+      primary: "#161B23",
+      secondary: "#706F6E",
     },
     error: {
       main: "#E40173",
@@ -33,7 +33,7 @@ const themeData = {
     },
   },
   typography: {
-    fontFamily: "Lato",
+    fontFamily: "Nunito",
     h1: {
       fontFamily: "Nunito",
       fontWeight: 800,

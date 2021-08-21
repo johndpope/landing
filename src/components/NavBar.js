@@ -44,18 +44,20 @@ const useStyles = makeStyles({
     flexFlow: "row nowrap",
     justifyContent: "flex-start",
     zIndex: "20",
+    backgroundColor: "#F4EBE2",
+    boxShadow: "none",
   },
   toolBar: {
     width: "100%",
   },
-  transparent: {
-    backgroundColor: "transparent !important",
-    boxShadow: "none",
-  },
-  white: {
-    backgroundColor: "#FFF !important",
-    boxShadow: "0px 12px 36px rgba(0, 0, 0, 0.04)",
-  },
+  // transparent: {
+  //   backgroundColor: "transparent !important",
+  //   boxShadow: "none",
+  // },
+  // white: {
+  //   backgroundColor: "#FFF !important",
+  //   boxShadow: "0px 12px 36px rgba(0, 0, 0, 0.04)",
+  // },
   appResponsive: {
     margin: "20px 10px",
   },
@@ -91,28 +93,28 @@ export default function NavBar(props) {
     }
   };
 
-  const BrandComponent = (
-    <Link to="/" style={{ textDecoration: "none" }}>
-      <div>
-        <Button className={classes.title}>
-          <img className={classes.logo} alt="Logo" src={logo} />
-          <Typography variant="h4">Zesty Market</Typography>
-        </Button>
-      </div>
-    </Link>
-  );
+  // const BrandComponent = (
+  //   <Link to="/" style={{ textDecoration: "none" }}>
+  //     <div>
+  //       <Button className={classes.title}>
+  //         <img className={classes.logo} alt="Logo" src={logo} />
+  //         <Typography variant="h4">Zesty Market</Typography>
+  //       </Button>
+  //     </div>
+  //   </Link>
+  // );
 
   return (
     <AppBar
       className={clsx({
         [classes.appBar]: true,
-        [classes.transparent]: !scrolled,
-        [classes.white]: scrolled,
+        // [classes.transparent]: scrolled,
+        // [classes.white]: scrolled,
       })}
       position="fixed"
     >
       <Toolbar className={classes.toolBar}>
-        <div className={classes.flex}>{BrandComponent}</div>
+        {/* <div className={classes.flex}>{BrandComponent}</div> */}
         <Hidden smDown>
           <NavBarLinks />
         </Hidden>

@@ -9,21 +9,25 @@ import Layout from "../components/Layout";
 import Button from "../components/Button";
 import hero from "../images/hero.svg";
 import heroMobile from "../images/hero_mobile.svg";
+import orange from "../images/orange.svg";
+import { blue } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
   section: {
     marginBottom: "2rem",
   },
   overlay: {
-    position: "absolute",
     width: "100%",
     left: 0,
     top: "20rem",
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     flexDirection: "column",
     zIndex: 2,
+    minHeight: "700px",
+    marginTop: "300px",
+    marginBottom: "175px",
   },
   overlayMobile: {
     position: "absolute",
@@ -71,16 +75,61 @@ const useStyles = makeStyles({
   },
   advertiserCard: {
     padding: "2rem",
-    backgroundColor: "#FFC899",
+    backgroundColor: "transparent",
     boxShadow: "none",
     borderRadius: "10px",
+    textAlign: "center",
+    width: "23rem",
   },
   publisherCard: {
+    textAlign: "center",
     padding: "2rem",
-    backgroundColor: "#99E3FF",
+    backgroundColor: "transparent",
     boxShadow: "none",
     borderRadius: "10px",
+    width: "23rem",
   },
+  cardH1: {
+    fontSize: "50px",
+  },
+  cardH2: {
+    fontSize: "25px",
+  },
+  cardContent: {
+    color: "#595959",
+  },
+  infoCard: {
+    textAlign: "center",
+    padding: "1rem",
+    backgroundColor: "transparent",
+    boxShadow: "none",
+    borderRadius: "10px",
+    width: "20rem",
+  },
+  infoBrandH1: {
+    fontWeight: "400",
+    textAlign: "left",
+    width: "95vw",
+  },
+  infoBrandTitle: {
+    color: "#FF7500",
+    fontWeight: "800",
+  },
+  infoCreatorH1: {
+    fontWeight: "400",
+    textAlign: "right",
+    width: "95vw",
+  },
+
+  infoCreatorTitle: {
+    color: "#00A3FF",
+    fontWeight: "800",
+  },
+  // grid: {
+  //   width: "100%",
+  //   margin: "0 auto",
+  //   backgroundColor: "black",
+  // },
 });
 
 const IndexPage = () => {
@@ -97,7 +146,8 @@ const IndexPage = () => {
         <section className={classes.section}>
           <Hidden smDown>
             <div>
-              <img alt="" src={hero} className={classes.heroImg} />
+              {/* <img alt="" src={hero} className={classes.heroImg} /> */}
+
               <div className={classes.overlay}>
                 <div className={classes.overlayContent}>
                   <Typography
@@ -106,8 +156,8 @@ const IndexPage = () => {
                     className={classes.header}
                     gutterBottom
                   >
-                    Rental Markets<br />
-                    For Digital Spaces
+                    Web3 Monetization <br />
+                    For Internet Communities
                   </Typography>
                   <Typography
                     variant="body1"
@@ -115,15 +165,7 @@ const IndexPage = () => {
                     className={classes.subtitle}
                     gutterBottom
                   >
-                    Turn your Twitch banner/webspace into an NFT and rent it out on the Web.
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    color="textPrimary"
-                    className={classes.subtitleMobile}
-                    gutterBottom
-                  >
-                    ---
+                    Say hello to a new way for creators to break free.
                   </Typography>
                 </div>
                 <div>
@@ -150,7 +192,7 @@ const IndexPage = () => {
             </div>
           </Hidden>
           <Hidden mdUp>
-            <img alt="" src={heroMobile} className={classes.heroImgMobile} />
+            {/* <img alt="" src={heroMobile} className={classes.heroImgMobile} /> */}
             <div className={classes.overlayMobile}>
               <div className={classes.overlayContentMobile}>
                 <Typography
@@ -159,8 +201,8 @@ const IndexPage = () => {
                   className={classes.headerMobile}
                   gutterBottom
                 >
-                  Rental Markets<br />
-                  For Digital Spaces
+                  Web3 Monetization <br />
+                  For Internet Communities
                 </Typography>
                 <Typography
                   variant="body1"
@@ -168,7 +210,7 @@ const IndexPage = () => {
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  Turn your Twitch banner/webspace into an NFT and rent it out on the Web.
+                  Say hello to a new way for creators to break free.
                 </Typography>
                 <Typography
                   variant="body1"
@@ -205,96 +247,115 @@ const IndexPage = () => {
         <section className={classes.section}>
           <Card
             style={{
-              backgroundColor: "#C8F0FF",
+              backgroundColor: "transparent",
               boxShadow: "none",
               margin: 0,
               padding: "2rem",
               borderRadius: "10px",
+              // width: "100%",
+              height: "75vh",
             }}
           >
-            <Grid container direction="row-reverse" spacing={6}>
-              <Grid item xs={12} md={6}>
+            <Grid container direction="column" spacing={6}>
+              <Grid item xs={12}>
                 <Grid
                   container
                   direction="column"
-                  alignItems="flex-end"
+                  alignItems="center"
                   justify="center"
                   spacing={4}
                   style={{
-                    textAlign: "right",
+                    textAlign: "center",
                     padding: "2rem",
                   }}
                 >
                   <Grid item xs={12}>
-                    <Typography variant="h1" color="textSecondary" gutterBottom>
+                    <Typography
+                      variant="h1"
+                      color="textPrimary"
+                      gutterBottom
+                      className={classes.cardH1}
+                    >
                       Creators
                     </Typography>
                     <Typography
                       variant="body1"
-                      color="textSecondary"
+                      color="textPrimary"
                       gutterBottom
                     >
                       Engage your audience and monetize without the middlemen
                     </Typography>
                   </Grid>
+                </Grid>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container direction="row" spacing={4} align="center">
+                  <Grid item xs={4}>
+                    <Card className={classes.publisherCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Easy Integration
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        Add our plugins into your content seamlessly to
+                        monetize, we're consistently building new software.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Card className={classes.publisherCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        True Ownership
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        NFTs allow you to truly own your content + find the best
+                        opportunities that maximize revenue and engagement.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Card className={classes.publisherCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Guaranteed Payout
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        Using smart contracts, we ensure that the funds are
+                        available to pay out before the deal happens.
+                      </Typography>
+                    </Card>
+                  </Grid>
                   <Grid item xs={12}>
                     <Button
-                      color="secondary"
+                      color="tertiary"
                       href="https://docs.zesty.market/guides/creators"
                       target="_blank"
                       rel="noreferrer"
                     >
                       Learn More
                     </Button>
-                  </Grid>
-                </Grid>
-              </Grid>
-              <Grid item xs={12} md={6}>
-                <Grid container direction="column" spacing={6}>
-                  <Grid item xs={12}>
-                    <Card className={classes.publisherCard}>
-                      <Typography
-                        variant="h4"
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        Easy Integration
-                      </Typography>
-                      <Typography variant="body1" color="textSecondary">
-                        Add our plugins into your content seamlessly to monetize,
-                        we're consistently building new software.
-                      </Typography>
-                    </Card>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Card className={classes.publisherCard}>
-                      <Typography
-                        variant="h4"
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        True Ownership
-                      </Typography>
-                      <Typography variant="body1" color="textSecondary">
-                        NFTs allow you to truly own your content + find the 
-                        best opportunities that maximize revenue and engagement.
-                      </Typography>
-                    </Card>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Card className={classes.publisherCard}>
-                      <Typography
-                        variant="h4"
-                        color="textSecondary"
-                        gutterBottom
-                      >
-                        Guaranteed Payout
-                      </Typography>
-                      <Typography variant="body1" color="textSecondary">
-                        Using smart contracts, we ensure that the funds are
-                        available to pay out before the deal happens.
-                      </Typography>
-                    </Card>
                   </Grid>
                 </Grid>
               </Grid>
@@ -306,29 +367,35 @@ const IndexPage = () => {
         <section className={classes.section}>
           <Card
             style={{
-              backgroundColor: "#FFF1E5",
+              backgroundColor: "transparent",
               boxShadow: "none",
               margin: 0,
               padding: "2rem",
               borderRadius: "10px",
+              // width: "100%",
+              height: "75vh",
             }}
           >
-            <Grid container direction="row" spacing={6}>
-              <Grid item xs={12} md={6}>
+            <Grid container direction="column" spacing={6}>
+              <Grid item xs={12}>
                 <Grid
                   container
                   direction="column"
-                  alignItems="flex-start"
+                  alignItems="center"
                   justify="center"
                   spacing={4}
                   style={{
-                    textAlign: "left",
+                    textAlign: "center",
                     padding: "2rem",
-                    display: "flex",
                   }}
                 >
                   <Grid item xs={12}>
-                    <Typography variant="h1" color="textPrimary" gutterBottom>
+                    <Typography
+                      variant="h1"
+                      color="textPrimary"
+                      gutterBottom
+                      className={classes.cardH1}
+                    >
                       Brands
                     </Typography>
                     <Typography
@@ -339,10 +406,71 @@ const IndexPage = () => {
                       Reach unique audiences to grow your business
                     </Typography>
                   </Grid>
+                </Grid>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container direction="row" spacing={4} align="center">
+                  <Grid item xs={4}>
+                    <Card className={classes.advertiserCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Foster Partnerships
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        Form relationships early on with up-and-coming creators.
+                        Build tangible reach beyond just numbers.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Card className={classes.advertiserCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Reward Fans
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        NFTs provide brands with rich engagement data and
+                        opportunities to reward the most loyal.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Card className={classes.advertiserCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Community Targeting
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        We don't need to collect intrusive data as we help
+                        brands target communities directly.
+                      </Typography>
+                    </Card>
+                  </Grid>
                   <Grid item xs={12}>
                     <Button
                       color="primary"
-                      href="https://docs.zesty.market/guides/advertisers"
+                      href="https://docs.zesty.market/guides/creators"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -351,38 +479,204 @@ const IndexPage = () => {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item xs={12} md={6}>
-                <Grid container direction="column" spacing={6}>
-                  <Grid item xs={12}>
-                    <Card className={classes.advertiserCard}>
-                      <Typography variant="h4" color="textPrimary" gutterBottom>
-                        Foster Partnerships
+            </Grid>
+          </Card>
+        </section>
+
+        {/* Advertiser Info Section */}
+        <section className={classes.section}>
+          <div className={classes.overlayContent}>
+            <Typography
+              variant="h1"
+              color="textPrimary"
+              className={classes.infoBrandH1}
+              gutterBottom
+            >
+              How it works for{" "}
+              <span className={classes.infoBrandTitle}>Brands</span>
+            </Typography>
+          </div>
+          <Card
+            style={{
+              backgroundColor: "#ede3da",
+              boxShadow: "none",
+              margin: "0 auto",
+              padding: "1rem",
+              borderRadius: "5px",
+              height: "25vh",
+            }}
+          >
+            <Grid container direction="column" spacing={6}>
+              <Grid item xs={12}>
+                <Grid
+                  container
+                  direction="column"
+                  alignItems="center"
+                  justify="center"
+                  spacing={4}
+                  style={{
+                    textAlign: "left",
+                    padding: "1rem",
+                  }}
+                ></Grid>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container direction="row" spacing={4} align="center">
+                  <Grid item xs={4}>
+                    <Card className={classes.infoCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Find
                       </Typography>
-                      <Typography variant="body1" color="textPrimary">
-                        Form relationships early on with up-and-coming creators.
-                        Build tangible reach beyond just numbers.
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        Look through our marketplace of digital space rental
+                        opportunites
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12}>
-                    <Card className={classes.advertiserCard}>
-                      <Typography variant="h4" color="textPrimary" gutterBottom>
-                        Reward Fans
+                  <Grid item xs={4}>
+                    <Card className={classes.infoCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Bid
                       </Typography>
-                      <Typography variant="body1" color="textPrimary">
-                        NFTs provide brands with rich engagement data 
-                        and opportunities to reward the most loyal.
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        When you see an ad spot that you like, make an offer.
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12}>
-                    <Card className={classes.advertiserCard}>
-                      <Typography variant="h4" color="textPrimary" gutterBottom>
-                        Community Targeting
+                  <Grid item xs={4}>
+                    <Card className={classes.infoCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Advertise
                       </Typography>
-                      <Typography variant="body1" color="textPrimary">
-                        We don't need to collect intrusive data as we help brands
-                        target communities directly.
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        If you win the bid, you'll be able to place your ad in
+                        during the time slot.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Card>
+        </section>
+
+        {/* Creator Info Section */}
+        <section className={classes.section}>
+          <div className={classes.overlayContent}>
+            <Typography
+              variant="h1"
+              color="textPrimary"
+              className={classes.infoCreatorH1}
+              gutterBottom
+            >
+              How it works for{" "}
+              <span className={classes.infoCreatorTitle}>Creators</span>
+            </Typography>
+          </div>
+          <Card
+            style={{
+              backgroundColor: "#ede3da",
+              boxShadow: "none",
+              margin: "0 auto",
+              padding: "1rem",
+              borderRadius: "5px",
+              height: "25vh",
+            }}
+          >
+            <Grid container direction="column" spacing={6}>
+              <Grid item xs={12}>
+                <Grid
+                  container
+                  direction="column"
+                  alignItems="center"
+                  justify="center"
+                  spacing={4}
+                  style={{
+                    textAlign: "left",
+                    padding: "1rem",
+                  }}
+                ></Grid>
+              </Grid>
+              <Grid item xs={12}>
+                <Grid container direction="row" spacing={4} align="center">
+                  <Grid item xs={4}>
+                    <Card className={classes.infoCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Mint
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        Mint an NFT that is a digital representation of
+                        ownership of your space
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Card className={classes.infoCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        List
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        List the NFT on the marketplace to allow advertisers to
+                        bid.
+                      </Typography>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Card className={classes.infoCard}>
+                      <Typography
+                        variant="h4"
+                        color="textPrimary"
+                        gutterBottom
+                        className={classes.cardH2}
+                      >
+                        Collect
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        className={classes.cardContent}
+                      >
+                        After the ad has been shown on your property, collect
+                        the funds.
                       </Typography>
                     </Card>
                   </Grid>

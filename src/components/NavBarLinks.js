@@ -1,17 +1,23 @@
 /*eslint-disable*/
 import React from "react";
-
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Hidden from "@material-ui/core/Hidden";
-import IconButton from "@material-ui/core/IconButton";
+import { Link } from "gatsby";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ChevronRight from "@material-ui/icons/ChevronRight";
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
-import CustomButton from "./Button";
+import {
+  AppBar,
+  Button,
+  Drawer,
+  Hidden,
+  IconButton,
+  Toolbar,
+  Typography,
+} from "@material-ui/core";
+import logo from "../images/logo.svg";
 
 const useStyles = makeStyles((theme) => ({
   list: {
@@ -20,35 +26,69 @@ const useStyles = makeStyles((theme) => ({
     listStyle: "none !important",
     paddingTop: "0 !important",
     paddingBottom: "0 !important",
+    // backgroundColor: "#fff",
+    width: "100%",
+    textAlign: "center !important",
   },
   listItem: {
-    float: "left !important",
+    // float: "left !important",
+    display: "inline-block !important",
     position: "relative !important",
-    display: "block !important",
     width: "auto !important",
     margin: "0 !important",
     padding: "0 !important",
-    paddingLeft: "0.3rem !important",
-    paddingRight: "0.3rem !important",
+    paddingLeft: "3rem !important",
+    paddingRight: "3rem !important",
     marginLeft: "0.35rem !important",
+    backgroundColor: "#f4f43",
+    // Hover
     [theme.breakpoints.down("sm")]: {
       width: "100% !important",
       float: "right !important",
       "&:after": {
         width: "calc(100% - 30px) !important",
         content: '""',
-        display: "block !important",
+        // display: "block !important",
         height: "1px !important",
         marginLeft: "15px !important",
         backgroundColor: "#e5e5e5 !important",
       },
     },
   },
+  logo: {
+    width: "1.5rem",
+    marginRight: "15px",
+    // paddingLeft: "3rem !important",
+    // paddingRight: "0.7rem !important",
+  },
   link: {
+    width: "100px",
+    position: "relative !important",
+    padding: "0.9375rem !important",
+    fontFamily: "Nunito !important",
+    fontWeight: "600 !important",
+    textTransform: "none !important",
+    textDecoration: "none !important",
+    lineHeight: "20px !important",
+    margin: "0 auto !important",
+    color: "#706F6E",
+    [theme.breakpoints.down("sm")]: {
+      width: "calc(100% - 30px !important)",
+      marginLeft: "15px !important",
+      marginBottom: "8p !importantx",
+      marginTop: "8px !important",
+      textAlign: "left !important",
+      "& > span:first-chil !importantd": {
+        justifyContent: "flex-start !important",
+      },
+    },
+  },
+  title: {
     position: "relative !important",
     padding: "0.9375rem !important",
     fontFamily: "Nunito !important",
     fontWeight: "700 !important",
+    fontSize: "35px",
     textTransform: "none !important",
     textDecoration: "none !important",
     lineHeight: "20px !important",
@@ -133,6 +173,17 @@ export default function NavBarLinks(props) {
         </ListItem>
         <ListItem className={classes.listItem}>
           <Button
+            aria-label="Zesty Market"
+            className={classes.title}
+            href="/"
+            rel="noreferrer"
+          >
+            <img src={logo} className={classes.logo}></img>
+            Zesty Market
+          </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Button
             aria-label="Github"
             className={classes.link}
             href="https://github.com/zestymarket"
@@ -143,6 +194,28 @@ export default function NavBarLinks(props) {
           </Button>
         </ListItem>
         <ListItem className={classes.listItem}>
+          <Button
+            aria-label="Blog"
+            className={classes.link}
+            href="https://github.com/zestymarket"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Blog
+          </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <Button
+            aria-label="Blog"
+            className={classes.link}
+            href="https://duneanalytics.com/limbofeather/zestymarket"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Stats
+          </Button>
+        </ListItem>
+        {/* <ListItem className={classes.listItem}>
           <CustomButton
             className={classes.link}
             size="small"
@@ -153,7 +226,7 @@ export default function NavBarLinks(props) {
           >
             Launch App
           </CustomButton>
-        </ListItem>
+        </ListItem> */}
       </List>
     </>
   );
