@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
   },
   infoSection: {
     [theme.breakpoints.up("xs")]: {
-      height: "70vh"
+      height: "60vh"
     },
     [theme.breakpoints.up("md")]: {
       height: "50vh"
