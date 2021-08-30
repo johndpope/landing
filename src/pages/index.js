@@ -128,7 +128,6 @@ const useStyles = makeStyles(theme => ({
   infoCreatorH1: {
     fontWeight: "400",
     textAlign: "right",
-    width: "95vw",
   },
 
   infoCreatorTitle: {
@@ -595,7 +594,7 @@ const IndexPage = () => {
 
         {/* Creator Info Section */}
         <section className={classes.section}>
-          <div className={classes.overlayContent}>
+          <div>
             <Typography
               variant="h1"
               color="textPrimary"
