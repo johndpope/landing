@@ -7,33 +7,16 @@ import Grid from "@material-ui/core/Grid";
 import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
-import hero from "../images/hero.svg";
-import heroMobile from "../images/hero_mobile.svg";
-//import orange from "../images/orange.svg";
-import { blue } from "@material-ui/core/colors";
 
 const useStyles = makeStyles(theme => ({
   section: {
     marginBottom: "2rem",
   },
   sectionCard: {
-    [theme.breakpoints.up("xs")]: {
-      height: "110vh"
-    },
-    [theme.breakpoints.up("md")]: {
-      height: "90vh"
-    }
+
   },
   infoSection: {
-    [theme.breakpoints.up("xs")]: {
-      height: "60vh"
-    },
-    [theme.breakpoints.up("md")]: {
-      height: "50vh"
-    },
-    [theme.breakpoints.up("lg")]: {
-      height: "30vh"
-    },
+
   },
   overlay: {
     width: "100%",
@@ -99,6 +82,14 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "10px",
     textAlign: "center",
     width: "23rem",
+  },
+  '@media (max-width: 500px)': {
+    creatorCardContainer: {
+      display: 'contents',
+    },
+    infoCardContainer: {
+      display: 'contents',
+    },
   },
   creatorCard: {
     textAlign: "center",
@@ -272,7 +263,6 @@ const IndexPage = () => {
               margin: 0,
               padding: "2rem",
               borderRadius: "10px",
-              // width: "100%",
             }}
           >
             <Grid container direction="column" spacing={6}>
@@ -309,7 +299,7 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Grid container direction="row" spacing={4} align="center">
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.creatorCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.creatorCard}>
                       <Typography
                         variant="h4"
@@ -328,7 +318,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.creatorCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.creatorCard}>
                       <Typography
                         variant="h4"
@@ -347,7 +337,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} lg={4}>
+                  <Grid className={classes.creatorCardContainer} item xs={12} lg={4}>
                     <Card className={classes.creatorCard}>
                       <Typography
                         variant="h4"
@@ -429,7 +419,7 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Grid container direction="row" spacing={4} align="center">
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.creatorCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.advertiserCard}>
                       <Typography
                         variant="h4"
@@ -448,7 +438,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.creatorCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.advertiserCard}>
                       <Typography
                         variant="h4"
@@ -467,7 +457,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} lg={4}>
+                  <Grid className={classes.creatorCardContainer} item xs={12} lg={4}>
                     <Card className={classes.advertiserCard}>
                       <Typography
                         variant="h4"
@@ -521,7 +511,7 @@ const IndexPage = () => {
               backgroundColor: "#ede3da",
               boxShadow: "none",
               margin: "0 auto",
-              padding: "1rem",
+              padding: "4rem",
               borderRadius: "5px",
             }}
           >
@@ -541,7 +531,7 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Grid container direction="row" spacing={4} align="center">
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.infoCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.infoCard}>
                       <Typography
                         variant="h4"
@@ -560,7 +550,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.infoCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.infoCard}>
                       <Typography
                         variant="h4"
@@ -578,7 +568,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} lg={4}>
+                  <Grid className={classes.infoCardContainer} item xs={12} lg={4}>
                     <Card className={classes.infoCard}>
                       <Typography
                         variant="h4"
@@ -622,7 +612,7 @@ const IndexPage = () => {
               backgroundColor: "#ede3da",
               boxShadow: "none",
               margin: "0 auto",
-              padding: "1rem",
+              padding: "4rem",
               borderRadius: "5px",
             }}
           >
@@ -642,7 +632,7 @@ const IndexPage = () => {
               </Grid>
               <Grid item xs={12}>
                 <Grid container direction="row" spacing={4} align="center">
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.infoCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.infoCard}>
                       <Typography
                         variant="h4"
@@ -661,7 +651,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} md={6} lg={4}>
+                  <Grid className={classes.infoCardContainer} item xs={12} md={6} lg={4}>
                     <Card className={classes.infoCard}>
                       <Typography
                         variant="h4"
@@ -680,7 +670,7 @@ const IndexPage = () => {
                       </Typography>
                     </Card>
                   </Grid>
-                  <Grid item xs={12} lg={4}>
+                  <Grid className={classes.infoCardContainer} item xs={12} lg={4}>
                     <Card className={classes.infoCard}>
                       <Typography
                         variant="h4"
