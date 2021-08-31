@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
+import logo from "../images/logo.svg";
 
 const useStyles = makeStyles(theme => ({
   section: {
@@ -134,11 +135,26 @@ const useStyles = makeStyles(theme => ({
     color: "#00A3FF",
     fontWeight: "800",
   },
-  // grid: {
-  //   width: "100%",
-  //   margin: "0 auto",
-  //   backgroundColor: "black",
-  // },
+  '@keyframes float':  {
+  	'0%': {
+  		transform: 'translateY(0px)'
+  	},
+  	'50%': {
+  		transform: 'translateY(-20px)'
+  	},
+  	'100%': {
+  		transform: 'translateY(0px)'
+  	}
+  },
+  floatingBackground: {
+    position: 'absolute',
+    animationName: '$float',
+    filter: 'grayscale(115%) sepia(44%)',
+    animationIterationCount: 'infinite',
+    animationDuration: '12s',
+    opacity: 0.2,
+    right: '30%'
+  }
 }));
 
 const IndexPage = () => {
@@ -158,6 +174,7 @@ const IndexPage = () => {
               {/* <img alt="" src={hero} className={classes.heroImg} /> */}
 
               <div className={classes.overlay}>
+                <img className={classes.floatingBackground} src={logo} alt="Zesty Logo" />
                 <div className={classes.overlayContent}>
                   <Typography
                     variant="h1"
