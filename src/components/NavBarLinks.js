@@ -8,6 +8,10 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ChevronRight from "@material-ui/icons/ChevronRight";
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import DiscordIcon from './DiscordIcon';
+
 import {
   AppBar,
   Button,
@@ -43,7 +47,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#f4f43",
     // Hover
     [theme.breakpoints.down("sm")]: {
-      width: "100% !important",
       float: "right !important",
       "&:after": {
         width: "calc(100% - 30px) !important",
@@ -151,50 +154,6 @@ export default function NavBarLinks(props) {
         </ListItem>
         <ListItem className={classes.listItem}>
           <Button
-            aria-label="Discord"
-            className={classes.link}
-            href="https://discord.gg/hSXTGvAcSs"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Discord
-          </Button>
-        </ListItem>
-        <ListItem className={classes.listItem}>
-          <Button
-            aria-label="Twitter"
-            className={classes.link}
-            href="https://twitter.com/zestymarket"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Twitter
-          </Button>
-        </ListItem>
-        <ListItem className={classes.listItem}>
-          <Button
-            aria-label="Zesty Market"
-            className={classes.title}
-            href="/"
-            rel="noreferrer"
-          >
-            <img src={logo} className={classes.logo}></img>
-            Zesty Market
-          </Button>
-        </ListItem>
-        <ListItem className={classes.listItem}>
-          <Button
-            aria-label="Github"
-            className={classes.link}
-            href="https://github.com/zestymarket"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Github
-          </Button>
-        </ListItem>
-        <ListItem className={classes.listItem}>
-          <Button
             aria-label="Blog"
             className={classes.link}
             href="https://github.com/zestymarket"
@@ -204,6 +163,19 @@ export default function NavBarLinks(props) {
             Blog
           </Button>
         </ListItem>
+        <Hidden mdDown>
+          <ListItem className={classes.listItem}>
+            <Button
+              aria-label="Zesty Market"
+              className={classes.title}
+              href="/"
+              rel="noreferrer"
+            >
+              <img src={logo} className={classes.logo}></img>
+              Zesty Market
+            </Button>
+          </ListItem>
+        </Hidden>
         <ListItem className={classes.listItem}>
           <Button
             aria-label="Blog"
@@ -214,6 +186,34 @@ export default function NavBarLinks(props) {
           >
             Stats
           </Button>
+        </ListItem>
+        <ListItem className={classes.listItem}>
+          <IconButton
+            style={{marginRight: 10}}
+            aria-label="Twitter"
+            href="https://twitter.com/zestymarket"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TwitterIcon/>
+          </IconButton>
+          <IconButton
+          aria-label="Github"
+          href="https://github.com/zestymarket"
+          rel="noreferrer"
+          target="_blank"
+          >
+          <GitHubIcon/>
+          </IconButton>
+          <IconButton
+            style={{marginLeft: 10}}
+            aria-label="Discord"
+            href="https://discord.gg/hSXTGvAcSs"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <DiscordIcon/>
+          </IconButton>
         </ListItem>
         {/* <ListItem className={classes.listItem}>
           <CustomButton

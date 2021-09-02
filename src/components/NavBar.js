@@ -4,12 +4,14 @@ import {
   Drawer,
   Hidden,
   IconButton,
+  Button,
   Toolbar,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Menu } from "@material-ui/icons";
 import clsx from "clsx";
 import NavBarLinks from "./NavBarLinks";
+import logo from "../images/logo.svg";
 
 const useStyles = makeStyles({
   flex: {
@@ -45,12 +47,26 @@ const useStyles = makeStyles({
   },
   toolBar: {
     width: "100%",
+    justifyContent: "end"
   },
   appResponsive: {
     margin: "20px 10px",
   },
   drawerPaper: {
     width: "16rem",
+  },
+  title: {
+    position: "absolute !important",
+    left: "50%",
+    transform: "translateX(-50%)",
+    padding: "0.9375rem !important",
+    fontFamily: "Nunito !important",
+    fontWeight: "700 !important",
+    fontSize: "15px",
+    textTransform: "none !important",
+    textDecoration: "none !important",
+    lineHeight: "20px !important",
+    margin: "0 !important",
   },
 });
 
@@ -79,7 +95,7 @@ export default function NavBar(props) {
         </Hidden>
         <Hidden mdUp>
           <IconButton aria-label="open drawer" onClick={handleDrawerToggle}>
-            <Menu style={{ fill: "#9D4800" }} />
+            <Menu style={{ fill: "#9D4800", right: 0 }} />
           </IconButton>
         </Hidden>
       </Toolbar>
@@ -97,6 +113,15 @@ export default function NavBar(props) {
             <NavBarLinks handleDrawerToggle={handleDrawerToggle} />
           </div>
         </Drawer>
+        <Button
+          aria-label="Zesty Market"
+          className={classes.title}
+          href="/"
+          rel="noreferrer"
+        >
+          <img src={logo} className={classes.logo}></img>
+          Zesty Market
+        </Button>
       </Hidden>
     </AppBar>
   );
