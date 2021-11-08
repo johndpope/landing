@@ -156,7 +156,7 @@ export default function NavBarLinks(props) {
           <Button
             aria-label="Blog"
             className={classes.link}
-            href="https://github.com/zestymarket"
+            href="https://blog.zesty.market"
             rel="noreferrer"
             target="_blank"
           >
