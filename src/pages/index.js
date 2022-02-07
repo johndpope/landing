@@ -182,8 +182,7 @@ const IndexPage = () => {
                     className={classes.header}
                     gutterBottom
                   >
-                    Web3 Monetization <br />
-                    For Internet Communities
+                    Buy and sell advertising space in the metaverse <br />
                   </Typography>
                   <Typography
                     variant="body1"
@@ -191,7 +190,7 @@ const IndexPage = () => {
                     className={classes.subtitle}
                     gutterBottom
                   >
-                    Say hello to a new way for creators to break free.
+                    Web3-enabled and tokenized for Internet Communities, owned by Internet Communities
                   </Typography>
                 </div>
                 <div>
@@ -227,8 +226,7 @@ const IndexPage = () => {
                   className={classes.headerMobile}
                   gutterBottom
                 >
-                  Web3 Monetization <br />
-                  For Internet Communities
+                  Buy and sell advertising space in the metaverse
                 </Typography>
                 <Typography
                   variant="body1"
@@ -236,7 +234,7 @@ const IndexPage = () => {
                   className={classes.subtitleMobile}
                   gutterBottom
                 >
-                  Say hello to a new way for creators to break free.
+                  Web3-enabled and tokenized for Internet Communities, owned by Internet Communities
                 </Typography>
                 <Typography
                   variant="body1"
@@ -301,7 +299,7 @@ const IndexPage = () => {
                       gutterBottom
                       className={classes.cardH1}
                     >
-                      Creators
+                      Virtual Space Owners
                     </Typography>
                     <Typography
                       variant="body1"
@@ -375,7 +373,7 @@ const IndexPage = () => {
                   <Grid item xs={12}>
                     <Button
                       color="tertiary"
-                      href="https://docs.zesty.market/guides/creators"
+                      href="https://docs.zesty.market/master/guides/for-creators"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -421,7 +419,7 @@ const IndexPage = () => {
                       gutterBottom
                       className={classes.cardH1}
                     >
-                      Brands
+                      Advertisers
                     </Typography>
                     <Typography
                       variant="body1"
@@ -495,7 +493,7 @@ const IndexPage = () => {
                   <Grid item xs={12}>
                     <Button
                       color="primary"
-                      href="https://docs.zesty.market/guides/creators"
+                      href="https://docs.zesty.market/master/guides/advertisers"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -518,7 +516,7 @@ const IndexPage = () => {
               gutterBottom
             >
               How it works for{" "}
-              <span className={classes.infoBrandTitle}>Brands</span>
+              <span className={classes.infoBrandTitle}>Advertisers</span>
             </Typography>
           </div>
           <Card
@@ -619,7 +617,7 @@ const IndexPage = () => {
               gutterBottom
             >
               How it works for{" "}
-              <span className={classes.infoCreatorTitle}>Creators</span>
+              <span className={classes.infoCreatorTitle}>Virtual Space Owners</span>
             </Typography>
           </div>
           <Card
