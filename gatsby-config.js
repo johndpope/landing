@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Zesty Market",
     description:
-      "Zesty Market is building web3-enabled monetization for creator communities.",
+      "Buy and sell advertising space in the metaverse",
     siteUrl: "https://zesty.market/",
     twitterCreator: "@zestymarket",
   },
